@@ -19,5 +19,5 @@ const portfolioSwiper = new Swiper('.portfolio__swiper', {
 
 
 AOS.init({
-  disable: true
+  disable: false
 });
