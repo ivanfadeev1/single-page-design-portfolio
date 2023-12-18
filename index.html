@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <title>Single-page design portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo header__logo" href="#">
+        <img class="logo__img" src="img/logo.svg" alt="Logo">
+      </a>
+      <button class="btn header__btn">Free Consultation</button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="skills">
+      <div class="container skills__container">
+        <div class="skills__descr" data-aos="flip-up">
+          <h1 class="skills__title">Design solutions made easy</h1>
+          <p class="skills__text">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+        </div>
+        <div class="skills__grid" data-aos="fade-up">
+          <div class="skills__item skills__item--graphic">
+            <h3 class="skills__subtitle">Graphic Design</h3>
+          </div>
+          <div class="skills__item skills__item--ux-ui">
+            <h3 class="skills__subtitle">UI/UX</h3>
+          </div>
+          <div class="skills__item skills__item--apps">
+            <h3 class="skills__subtitle">Apps</h3>
+          </div>
+          <div class="skills__item skills__item--photography">
+            <h3 class="skills__subtitle">Photography</h3>
+          </div>
+          <div class="skills__item skills__item--illustrations">
+            <h3 class="skills__subtitle">Illustrations</h3>
+          </div>
+          <div class="skills__item skills__item--motion">
+            <h3 class="skills__subtitle">Motion Graphics</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bio">
+      <div class="container bio__container" data-aos="fade-up">
+        <img class="bio__img" src="img/bio.webp" alt="Amy">
+        <div class="bio__descr">
+          <h2 class="bio__title">I’m Amy, and I’d love to work on your next project</h2>
+          <p class="bio__text">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+          <button class="btn bio__btn btn--orange">Free Consultation</button>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <h2 class="portfolio__title">My Work</h2>
+      <div class="container portfolio__container" data-aos="flip-down">
+        <div class="swiper portfolio__swiper">
+          <div class="swiper-wrapper portfolio__swiper-wrapper">
+            <div class="swiper-slide portfolio__swiper-slide">
+              <img class="portfolio__swiper-img" src="img/slide-1.jpg" alt="Purple geometric patterns">
+            </div>
+            <div class="swiper-slide portfolio__swiper-slide">
+              <img class="portfolio__swiper-img" src="img/slide-2.jpg" alt="Colorful newspaper design">
+            </div>
+            <div class="swiper-slide portfolio__swiper-slide">
+              <img class="portfolio__swiper-img" src="img/slide-3.jpg" alt="Stack of books about design">
+            </div>
+            <div class="swiper-slide portfolio__swiper-slide">
+              <img class="portfolio__swiper-img" src="img/slide-4.jpg" alt="Smartphone with a design portfolio open">
+            </div>
+            <div class="swiper-slide portfolio__swiper-slide">
+              <img class="portfolio__swiper-img" src="img/slide-5.jpg" alt="Abstract 3d work">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__buttons">
+        <div class="btn-nav btn-nav--left"></div>
+        <div class="btn-nav btn-nav--right"></div>
+      </div>
+    </section>
+    <section class="callback">
+      <div class="container callback__container" data-aos="fade-up">
+        <div class="callback__wrapper">
+          <div class="callback__descr">
+            <h2 class="callback__title">Book a call with me</h2>
+            <p class="callback__text">I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+          </div>
+          <button class="btn callback__btn btn--orange" data-aos="zoom-in-down">Free Consultation</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <a class="logo footer__logo" href="#">
+        <img class="logo__img" src="img/logo.svg" alt="Logo">
+      </a>
+      <button class="btn footer__btn">Free Consultation</button>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
