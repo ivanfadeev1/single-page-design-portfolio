@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/)
-- [Live Site URL](https://ivanfadeev1.github.io/)
+- [Solution URL](https://github.com/ivanfadeev1/single-page-design-portfolio)
+- [Live Site URL](https://ivanfadeev1.github.io/single-page-design-portfolio/)
 
 ## My process
 
