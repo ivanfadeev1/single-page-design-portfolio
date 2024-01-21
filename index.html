@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <title>Single-page design portfolio</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <title>Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" fetchpriority="high" as="image" href="img/pattern-graphic-design.svg" type="image/svg+xml">
 </head>
 <body>
   <header class="header">
     <div class="container header__container">
       <a class="logo header__logo" href="#">
-        <img class="logo__img" src="img/logo.svg" alt="Logo">
+        <img class="logo__img" src="img/logo.svg" alt="Website logo" width="64" height="64">
       </a>
       <button class="btn header__btn">Free Consultation</button>
     </div>
@@ -30,29 +31,66 @@
         </div>
         <div class="skills__grid" data-aos="fade-up">
           <div class="skills__item skills__item--graphic">
-            <h3 class="skills__subtitle">Graphic Design</h3>
+            <h2 class="skills__subtitle">Graphic Design</h2>
           </div>
           <div class="skills__item skills__item--ux-ui">
-            <h3 class="skills__subtitle">UI/UX</h3>
+            <h2 class="skills__subtitle">UI/UX</h2>
           </div>
           <div class="skills__item skills__item--apps">
-            <h3 class="skills__subtitle">Apps</h3>
+            <h2 class="skills__subtitle">Apps</h2>
           </div>
           <div class="skills__item skills__item--photography">
-            <h3 class="skills__subtitle">Photography</h3>
+            <h2 class="skills__subtitle">Photography</h2>
           </div>
           <div class="skills__item skills__item--illustrations">
-            <h3 class="skills__subtitle">Illustrations</h3>
+            <h2 class="skills__subtitle">Illustrations</h2>
           </div>
           <div class="skills__item skills__item--motion">
-            <h3 class="skills__subtitle">Motion Graphics</h3>
+            <h2 class="skills__subtitle">Motion Graphics</h2>
           </div>
         </div>
       </div>
     </section>
     <section class="bio">
       <div class="container bio__container" data-aos="fade-up">
-        <img class="bio__img" src="img/bio.webp" alt="Amy">
+        <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 640px)"
+            srcset="img/bio-300.webp,
+                    img/bio-600.webp 2x">
+          <source
+            type="image/png"
+            media="(max-width: 640px)"
+            srcset="img/bio-300.png,
+                    img/bio-600.png 2x">
+          <source
+            type="image/webp"
+            media="(max-width: 992px)"
+            srcset="img/bio-364.webp,
+                    img/bio-728.webp 2x">
+          <source
+            type="image/png"
+            media="(max-width: 992px)"
+            srcset="img/bio-364.png,
+                    img/bio-728.png 2x">
+          <source
+            type="image/webp"
+            media="(min-width: 993px)"
+            srcset="img/bio-445.webp,
+                    img/bio-890.webp 2x">
+          <source
+            type="image/png"
+            media="(min-width: 993px)"
+            srcset="img/bio-445.png,
+                    img/bio-890.png 2x">
+          <img
+            class="bio__img"
+            src="img/bio-445.png"
+            alt="Amy"
+            width="445"
+            height="445">
+        </picture>
         <div class="bio__descr">
           <h2 class="bio__title">I’m Amy, and I’d love to work on your next project</h2>
           <p class="bio__text">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
@@ -62,30 +100,120 @@
     </section>
     <section class="portfolio">
       <h2 class="portfolio__title">My Work</h2>
-      <div class="container portfolio__container" data-aos="flip-down">
+      <div class="container portfolio__container" data-aos="fade-up">
         <div class="swiper portfolio__swiper">
           <div class="swiper-wrapper portfolio__swiper-wrapper">
             <div class="swiper-slide portfolio__swiper-slide">
-              <img class="portfolio__swiper-img" src="img/slide-1.jpg" alt="Purple geometric patterns">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/slide-1-270.webp 270w,
+                          img/slide-1-540.webp 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px">
+                <img
+                  class="portfolio__swiper-img"
+                  srcset="img/slide-1-270.jpg 270w,
+                          img/slide-1-540.jpg 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px"
+                  src="img/slide-1-540.jpg"
+                  alt="Purple geometric patterns"
+                  width="540"
+                  height="360"
+                  loading="lazy">
+              </picture>
             </div>
             <div class="swiper-slide portfolio__swiper-slide">
-              <img class="portfolio__swiper-img" src="img/slide-2.jpg" alt="Colorful newspaper design">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/slide-2-270.webp 270w,
+                          img/slide-2-540.webp 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px">
+                <img
+                  class="portfolio__swiper-img"
+                  srcset="img/slide-2-270.jpg 270w,
+                          img/slide-2-540.jpg 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px"
+                  src="img/slide-2-540.jpg"
+                  alt="Colorful newspaper design"
+                  width="540"
+                  height="360"
+                  loading="lazy">
+              </picture>
             </div>
             <div class="swiper-slide portfolio__swiper-slide">
-              <img class="portfolio__swiper-img" src="img/slide-3.jpg" alt="Stack of books about design">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/slide-3-270.webp 270w,
+                          img/slide-3-540.webp 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px">
+                <img
+                  class="portfolio__swiper-img"
+                  srcset="img/slide-3-270.jpg 270w,
+                          img/slide-3-540.jpg 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px"
+                  src="img/slide-3-540.jpg"
+                  alt="Stack of books about design"
+                  width="540"
+                  height="360"
+                  loading="lazy">
+              </picture>
             </div>
             <div class="swiper-slide portfolio__swiper-slide">
-              <img class="portfolio__swiper-img" src="img/slide-4.jpg" alt="Smartphone with a design portfolio open">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/slide-4-270.webp 270w,
+                          img/slide-4-540.webp 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px">
+                <img
+                  class="portfolio__swiper-img"
+                  srcset="img/slide-4-270.jpg 270w,
+                          img/slide-4-540.jpg 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px"
+                  src="img/slide-4-540.jpg"
+                  alt="Smartphone with a design portfolio open"
+                  width="540"
+                  height="360"
+                  loading="lazy">
+              </picture>
             </div>
             <div class="swiper-slide portfolio__swiper-slide">
-              <img class="portfolio__swiper-img" src="img/slide-5.jpg" alt="Abstract 3d work">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/slide-5-270.webp 270w,
+                          img/slide-5-540.webp 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px">
+                <img
+                  class="portfolio__swiper-img"
+                  srcset="img/slide-5-270.jpg 270w,
+                          img/slide-5-540.jpg 540w"
+                  sizes="(max-width: 640px) 270px,
+                         540px"
+                  src="img/slide-5-540.jpg"
+                  alt="Abstract 3d work"
+                  width="540"
+                  height="360"
+                  loading="lazy">
+              </picture>
             </div>
           </div>
         </div>
       </div>
       <div class="portfolio__buttons">
-        <div class="btn-nav btn-nav--left"></div>
-        <div class="btn-nav btn-nav--right"></div>
+        <button class="btn-nav btn-nav--left" aria-label="Previous slide"></button>
+        <button class="btn-nav btn-nav--right" aria-label="Next slide"></button>
       </div>
     </section>
     <section class="callback">
@@ -103,12 +231,11 @@
   <footer class="footer">
     <div class="container footer__container">
       <a class="logo footer__logo" href="#">
-        <img class="logo__img" src="img/logo.svg" alt="Logo">
+        <img class="logo__img" src="img/logo.svg" alt="Website logo" width="64" height="64">
       </a>
       <button class="btn footer__btn">Free Consultation</button>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
 </body>

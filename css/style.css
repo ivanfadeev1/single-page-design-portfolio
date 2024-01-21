@@ -1,5 +1,5 @@
-@import './normalize.css';
-@import './reset.css';
+@import 'normalize.css';
+@import 'reset.css';
 
 /* General */
 
@@ -16,6 +16,12 @@ body {
         font-size: 16px;
         line-height: 26px;
     }
+}
+
+header,
+section,
+footer {
+    overflow-x: hidden;
 }
 
 .container {
@@ -299,16 +305,16 @@ body {
 }
 
 .bio__img {
-    width: 445px;
+    max-width: 445px;
 }
 @media (max-width: 992px) {
     .bio__img {
-        width: 364px;
+        max-width: 364px;
     }
 }
 @media (max-width: 640px) {
     .bio__img {
-        width: 300px;
+        max-width: 300px;
     }
 }
 
